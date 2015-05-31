@@ -1,4 +1,4 @@
-Liquid Registrar Software Documentation
+Liquid Domain Management Documentation
 =======================================
 
 Table of Contents
@@ -12,11 +12,4 @@ Table of Contents
    restapi
    whmcs
    faq
-
-Indices and tables
-==================
-
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
 
