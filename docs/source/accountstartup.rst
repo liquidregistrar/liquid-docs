@@ -67,14 +67,14 @@ Use our REST APIs to integrate with your own website
 
 If you are already selling several other Products and Services to your existing clients through another interface/Control Panel and do not want to add the burden of introducing the new Control Panels to them, you could use our REST APIs to integrate provisioning and management of these Products and Services in your existing interfaces and Control Panels.
 
-Click here for detail how to use our REST APIs.
+See :ref:`restapi-label` page for more detail.
 
 WHMCS Integrations
 ------------------
 
 If you already using WHMCS billing software, you could easily install our registrar module to integrate liquid to your whmcs billing software. 
 
-Click here for the WHMCS integrations documentation.
+See :ref:`whmcs-label` page for more detail.
 
 Configure your Payment Collection Options
 -----------------------------------------

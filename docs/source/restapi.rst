@@ -1,3 +1,5 @@
+.. _restapi-label:
+
 REST APIs
 ========================
 
@@ -6,7 +8,7 @@ Introductions
 
 The Liquid API is organized around `REST <http://en.wikipedia.org/wiki/Representational_State_Transfer>`_. Our API is designed to have predictable, resource-oriented URLs and to use HTTP response codes to indicate API errors. We use built-in HTTP features, like HTTP authentication and HTTP verbs, which can be understood by off-the-shelf HTTP clients, and we support cross-origin resource sharing to allow you to interact securely with our API from a client-side web application (though you should remember that you should never expose your secret API key in any public website's client-side code). `JSON <http://www.json.org/>`_  will be returned in all responses from the API, including errors.
 
-To make the Liquid API as explorable as possible, we provide demo reseller account. Please create reseller demo account here to test your code or applications. Data created within demo reseller account will never cost any money and will not create real domain.
+To make the Liquid API as explorable as possible, we provide demo reseller account. Please create reseller demo account here to test your code or applications. Data created within demo reseller account will never cost any money and will not create real domain. Read the :ref:`demoaccount-label` documentation.
 
 Authentication
 --------------
@@ -143,7 +145,7 @@ We provide API Console Tool for you to try out the API request and understand th
 - `Demo Account API Requests <https://api.liqu.id/docs>`_
 - `Live Account Api Requests <https://api.domainsas.com/docs>`_
 
-Feedback and next steps
+Feedback
 -----------------------
 
-If you find any issues with Liquid API, please use our email support devsupport@liqu.id dedicated to Liquid API where we’ll be available and actively listening to all of your feedback. We look forward to working with you and can’t wait to see what everyone builds.
+If you find any issues with Liquid API, please use our `ticketing support systems <https://liqudotid.freshdesk.com/support/tickets/new>`_ dedicated to Liquid API where we’ll be available and actively listening to all of your feedback. We look forward to working with you and can’t wait to see what everyone builds.
