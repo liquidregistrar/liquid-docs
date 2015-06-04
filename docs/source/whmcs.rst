@@ -21,6 +21,8 @@ Liquid ResellerCamp WHMCS Registrar Module Installations
 	c. Choose "ResellerCamp" in the registrar dropdown menu and enter both the Reseller ID and API Key noted above.
 	d. Then click Save Changes
 
+.. image:: resellercamp-whmcs.jpg
+
 And that's it, WHMCS will now be able to communicate with your ResellerCamp account to automate domain registration & management for your customers.
 
 Demo Mode
@@ -31,6 +33,8 @@ Next enter your demo account details under Setup > Domain Registrars > ResellerC
 
 .. note::
 	Live nameservers created at the Registry will return a Nameserver is not a valid Nameserver error unless they are created/registered in the demo environment.
+
+
 	The demo control panel will try to check the validity of the nameservers in the demo platform and not on the Registry, so you must register the nameservers first before attempting any domain registrations on the demo platform.
 
 
