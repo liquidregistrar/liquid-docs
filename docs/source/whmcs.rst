@@ -18,7 +18,7 @@ Liquid ResellerCamp WHMCS Registrar Module Installations
 3. Setup WHMCS Configuration
 	a. Now, login to your WHMCS Administration Area
 	b. Go to Setup > Products/Services > Domain Registrars
-	c. Choose "ResellerCamp" in the registrar dropdown menu and enter both the Reseller ID and API Key noted above.
+	c. Choose "Liquid" in the registrar dropdown menu and enter both the Reseller ID and API Key noted above.
 	d. Then click Save Changes
 
 .. image:: resellercamp-whmcs.jpg
