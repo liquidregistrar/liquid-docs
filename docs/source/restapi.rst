@@ -30,7 +30,7 @@ Attributes
 
 :type: The type of error returned. Can be unauthorized, invalid_request, or card_error.
 :message: A human-readable message giving more details about the error. 
-:code: Programming readable error code, more details than type. For example: invalid_argument
+:code: Programming readable error code, more details than type. For example: invalid_argument.
 
 
 Pagination
