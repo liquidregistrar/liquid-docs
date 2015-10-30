@@ -142,8 +142,8 @@ REST API Requests
 
 We provide API Console Tool for you to try out the API request and understand the responses.
 
-- `Demo Account API Requests <https://api.liqu.id/docs>`_
-- `Live Account Api Requests <https://api.domainsas.com/docs>`_
+- `Demo Account API Requests <https://api.domainsas.com/docs>`_
+- `Live Account Api Requests <https://api.liqu.id/docs>`_
 
 Feedback
 -----------------------
