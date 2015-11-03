@@ -1,6 +1,6 @@
 .. _whmcs-label:
 
-WHMCS Intergations
+WHMCS Integrations
 ========================
 
 Liquid ResellerCamp WHMCS Registrar Module Installations
