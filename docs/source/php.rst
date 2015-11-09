@@ -331,7 +331,41 @@ Example response:
     }
 
 
-Retrieving data using avaliable class api
+Deleting data using callApi()
+-----------------------------
+
+Example Request to delete a customer:
+
+.. sourcecode:: json
+
+    $customer_id = 32;
+
+    $resourcePath   = '/customers/'.$customer_id;
+    $method         = 'DELETE';
+    $queryParams    = array();
+    $headerParams   = array();
+    $formParams     = array();
+
+    list($response, $header) = $apiClient->callApi(
+        $resourcePath,
+        $method,
+        $queryParams,
+        $formParams,
+        $headerParams
+    );
+    echo json_encode($response);
+
+Example response:
+
+.. sourcecode:: json
+
+    {
+        "customer_id":"32",
+        "deleted":true
+    }
+
+
+Retrieving data using available class api
 -----------------------------------------
 
 Using DomainsApi() to retrieve all domains:
@@ -469,7 +503,7 @@ Example response:
     ]
 
 
-Creating data using avaliable class api
+Creating data using available class api
 ---------------------------------------
 
 Using BillingApi() to add fund a reseller:
@@ -505,7 +539,7 @@ Example response:
     }
 
 
-Updating data using avaliable class api
+Updating data using available class api
 ---------------------------------------
 
 Using ResellersApi() to update a reseller:
@@ -597,7 +631,34 @@ Example response:
     }
 
 
-Avaliable class api list
+Deleting data using available class api
+---------------------------------------
+
+Using ResellersApi() to delete a reseller:
+
+.. sourcecode:: json
+
+    $reseller = new \Swagger\Client\Api\ResellersApi($apiClient);
+
+    $reseller_id = 343;
+
+    list($response, $header) = $reseller->delete_(
+        $reseller_id
+    );
+    echo json_encode($response);
+
+Example response:
+
+.. sourcecode:: json
+
+    {
+        "reseller_id":"343",
+        "deleted":true
+    }
+
+
+
+Available class api list
 ------------------------
 
 +------------------------+------------------------+------------------------+
