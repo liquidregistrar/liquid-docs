@@ -25,7 +25,7 @@ Example Request Authentication
 
 .. sourcecode:: json
 
-    $apiClient = new \Swagger\Client\ApiClient();
+    $apiClient = new \Liquid\Client\ApiClient();
 
 You can set the default API key, or you can always pass a key directly to an object's constructor. Authentication is transparently handled for you in subsequent method calls.
 
@@ -57,7 +57,7 @@ Our API libraries raise exceptions for many reasons, such as a failed charge, in
 
     try {
         // Use Liquid's library to make requests...
-    } catch (Swagger\Client\ApiException $e) {
+    } catch (Liquid\Client\ApiException $e) {
         echo 'Caught exception: ', $e->getMessage(), "\n";
         echo '<br>HTTP response headers: ', $e->getResponseHeaders(), "\n";
         echo '<br>HTTP response body: ', $e->getResponseBody(), "\n";
@@ -74,7 +74,7 @@ Example Request
 
 .. sourcecode:: json
 
-    $apiClient = new \Swagger\Client\ApiClient();
+    $apiClient = new \Liquid\Client\ApiClient();
 
     // set Host to https://api.domainsas.com/v1 if you want to use Liquid Demo
     $apiClient->getConfig()->setHost('https://api.liqu.id/v1');
@@ -372,7 +372,7 @@ Using DomainsApi() to retrieve all domains:
 
 .. sourcecode:: json
 
-    $domains = new \Swagger\Client\Api\DomainsApi($apiClient);
+    $domains = new \Liquid\Client\Api\DomainsApi($apiClient);
 
     $limit               = 2;
     $page_no             = null;
@@ -510,7 +510,7 @@ Using BillingApi() to add fund a reseller:
 
 .. sourcecode:: json
 
-    $billing = new \Swagger\Client\Api\BillingApi($apiClient);
+    $billing = new \Liquid\Client\Api\BillingApi($apiClient);
 
     $reseller_id    = 113;
     $amount         = 150;
@@ -546,7 +546,7 @@ Using ResellersApi() to update a reseller:
 
 .. sourcecode:: json
 
-    $reseller = new \Swagger\Client\Api\ResellersApi($apiClient);
+    $reseller = new \Liquid\Client\Api\ResellersApi($apiClient);
 
     $reseller_id    = 113;
     $email          = 'arya+15@jogjacamp.co.id';
@@ -638,7 +638,7 @@ Using ResellersApi() to delete a reseller:
 
 .. sourcecode:: json
 
-    $reseller = new \Swagger\Client\Api\ResellersApi($apiClient);
+    $reseller = new \Liquid\Client\Api\ResellersApi($apiClient);
 
     $reseller_id = 343;
 
@@ -662,7 +662,7 @@ Available class api list
 ------------------------
 
 +------------------------+------------------------+------------------------+
-|  AccountApi()          |  CustomerApi()         |  EmailforwardinApi()   |
+|  AccountApi()          |  CustomerApi()         |  EmailforwardingApi()  |
 +------------------------+------------------------+------------------------+
 |  BillingApi()          |  DnsApi()              |  PrivacyprotectionApi()|
 +------------------------+------------------------+------------------------+
