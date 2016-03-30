@@ -72,7 +72,7 @@ Many objects contain the ID of a related object in their response properties. Fo
 
 Example Request
 
-.. sourcecode:: json
+.. sourcecode:: php
 
     $apiClient = new \Liquid\Client\ApiClient();
 
@@ -89,7 +89,7 @@ Retrieving data using callApi()
 
 Example Request to retrieve all domains with params:
 
-.. sourcecode:: json
+.. sourcecode:: php
 
     $resourcePath = '/domains';
     $method       = 'GET';
@@ -215,7 +215,7 @@ Creating data using callApi()
 
 Example Request to create a new customer:
 
-.. sourcecode:: json
+.. sourcecode:: php
 
     $resourcePath   = '/customers';
     $method         = 'POST';
@@ -293,7 +293,7 @@ Updating data using callApi()
 
 Example Request to update a customer:
 
-.. sourcecode:: json
+.. sourcecode:: php
 
     $customer_id    = 18;
     $resourcePath   = '/customers/' . $customer_id;
@@ -371,7 +371,7 @@ Deleting data using callApi()
 
 Example Request to delete a customer:
 
-.. sourcecode:: json
+.. sourcecode:: php
 
     $customer_id  = 32;
     $resourcePath = '/customers/' . $customer_id;
@@ -416,7 +416,7 @@ Retrieving data using available class api
 
 Using DomainsApi() to retrieve all domains:
 
-.. sourcecode:: json
+.. sourcecode:: php
 
     $apiDomains = new \Liquid\Client\Api\DomainsApi($apiClient);
 
@@ -566,7 +566,7 @@ Creating data using available class api
 
 Using BillingApi() to add fund a reseller:
 
-.. sourcecode:: json
+.. sourcecode:: php
 
     $apiBilling = new \Liquid\Client\Api\BillingApi($apiClient);
 
@@ -614,7 +614,7 @@ Updating data using available class api
 
 Using ResellersApi() to update a reseller:
 
-.. sourcecode:: json
+.. sourcecode:: php
 
     $apiReseller = new \Liquid\Client\Api\ResellersApi($apiClient);
 
@@ -717,7 +717,7 @@ Deleting data using available class api
 
 Using ResellersApi() to delete a reseller:
 
-.. sourcecode:: json
+.. sourcecode:: php
 
     $apiReseller = new \Liquid\Client\Api\ResellersApi($apiClient);
 
