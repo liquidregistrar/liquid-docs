@@ -91,22 +91,34 @@ Example Request to retrieve all domains with params:
 
 .. sourcecode:: json
 
-    $resourcePath   = '/domains';
-    $method         = 'GET';
-    $formParams    = array();
-    $headerParams   = array();
+    $resourcePath = '/domains';
+    $method       = 'GET';
+    $formParams   = array();
+    $headerParams = array();
 
-    $queryParams['limit'] = 2;
+    $queryParams['limit'] = 100;
     $queryParams['tld']   = 'com';
 
-    list($response, $header) = $apiClient->callApi(
-        $resourcePath,
-        $method,
-        $queryParams,
-        $formParams,
-        $headerParams
-    );
-    echo json_encode($response);
+    try {
+        list($response, $header) = $apiClient->callApi(
+            $resourcePath,
+            $method,
+            $queryParams,
+            $formParams,
+            $headerParams
+        );
+    } catch (Liquid\Client\ApiException $e) {
+        echo 'Caught exception: ', $e->getMessage(), "\n";
+        echo '<br>HTTP response headers: ', $e->getResponseHeaders(), "\n";
+        echo '<br>HTTP response body: ', $e->getResponseBody(), "\n";
+        echo '<br>HTTP status code: ', $e->getCode(), "\n";
+        die;
+    }
+
+    // convert obj to array
+    $response = json_decode(json_encode($response), true);
+
+    print_r($response);
 
 Example response:
 
@@ -222,14 +234,26 @@ Example Request to create a new customer:
     $formParams['tel_cc_no']      = 62;
     $formParams['tel_no']         = 857321654;
 
-    list($response, $header) = $apiClient->callApi(
-        $resourcePath,
-        $method,
-        $queryParams,
-        $formParams,
-        $headerParams
-    );
-    echo json_encode($response);
+    try {
+        list($response, $header) = $apiClient->callApi(
+            $resourcePath,
+            $method,
+            $queryParams,
+            $formParams,
+            $headerParams
+        );
+    } catch (Liquid\Client\ApiException $e) {
+        echo 'Caught exception: ', $e->getMessage(), "\n";
+        echo '<br>HTTP response headers: ', $e->getResponseHeaders(), "\n";
+        echo '<br>HTTP response body: ', $e->getResponseBody(), "\n";
+        echo '<br>HTTP status code: ', $e->getCode(), "\n";
+        die;
+    }
+
+    // convert obj to array
+    $response = json_decode(json_encode($response), true);
+
+    print_r($response);
 
 Example response:
 
@@ -272,8 +296,7 @@ Example Request to update a customer:
 .. sourcecode:: json
 
     $customer_id    = 18;
-
-    $resourcePath   = '/customers/'.$customer_id;
+    $resourcePath   = '/customers/' . $customer_id;
     $method         = 'PUT';
     $queryParams    = array();
     $headerParams   = array();
@@ -289,14 +312,26 @@ Example Request to update a customer:
     $formParams['tel_cc_no']      = 62;
     $formParams['tel_no']         = 857321654;
 
-    list($response, $header) = $apiClient->callApi(
-        $resourcePath,
-        $method,
-        $queryParams,
-        $formParams,
-        $headerParams
-    );
-    echo json_encode($response);
+    try {
+        list($response, $header) = $apiClient->callApi(
+            $resourcePath,
+            $method,
+            $queryParams,
+            $formParams,
+            $headerParams
+        );
+    } catch (Liquid\Client\ApiException $e) {
+        echo 'Caught exception: ', $e->getMessage(), "\n";
+        echo '<br>HTTP response headers: ', $e->getResponseHeaders(), "\n";
+        echo '<br>HTTP response body: ', $e->getResponseBody(), "\n";
+        echo '<br>HTTP status code: ', $e->getCode(), "\n";
+        die;
+    }
+
+    // convert obj to array
+    $response = json_decode(json_encode($response), true);
+
+    print_r($response);
 
 Example response:
 
@@ -338,22 +373,33 @@ Example Request to delete a customer:
 
 .. sourcecode:: json
 
-    $customer_id = 32;
+    $customer_id  = 32;
+    $resourcePath = '/customers/' . $customer_id;
+    $method       = 'DELETE';
+    $queryParams  = array();
+    $headerParams = array();
+    $formParams   = array();
 
-    $resourcePath   = '/customers/'.$customer_id;
-    $method         = 'DELETE';
-    $queryParams    = array();
-    $headerParams   = array();
-    $formParams     = array();
+    try {
+        list($response, $header) = $apiClient->callApi(
+            $resourcePath,
+            $method,
+            $queryParams,
+            $formParams,
+            $headerParams
+        );
+    } catch (Liquid\Client\ApiException $e) {
+        echo 'Caught exception: ', $e->getMessage(), "\n";
+        echo '<br>HTTP response headers: ', $e->getResponseHeaders(), "\n";
+        echo '<br>HTTP response body: ', $e->getResponseBody(), "\n";
+        echo '<br>HTTP status code: ', $e->getCode(), "\n";
+        die;
+    }
 
-    list($response, $header) = $apiClient->callApi(
-        $resourcePath,
-        $method,
-        $queryParams,
-        $formParams,
-        $headerParams
-    );
-    echo json_encode($response);
+    // convert obj to array
+    $response = json_decode(json_encode($response), true);
+
+    print_r($response);
 
 Example response:
 
@@ -372,46 +418,58 @@ Using DomainsApi() to retrieve all domains:
 
 .. sourcecode:: json
 
-    $domains = new \Liquid\Client\Api\DomainsApi($apiClient);
+    $apiDomains = new \Liquid\Client\Api\DomainsApi($apiClient);
 
-    $limit               = 2;
-    $page_no             = null;
-    $domain_id           = null;
-    $reseller_id         = null;
-    $customer_id         = null;
-    $show_child_orders   = null;
-    $tld                 = null;
-    $status              = null;
-    $domain_name         = null;
+    $limit                      = 2;
+    $page_no                    = null;
+    $domain_id                  = null;
+    $reseller_id                = null;
+    $customer_id                = null;
+    $show_child_orders          = null;
+    $tld                        = null;
+    $status                     = null;
+    $domain_name                = null;
     $privacy_protection_enabled = null;
-    $creation_time_start = null;
-    $creation_time_end   = null;
-    $expiry_date_start   = null;
-    $expiry_date_end     = null;
-    $reseller_email      = null;
-    $customer_email      = null;
-    $exact_domain_name   = null;
+    $creation_time_start        = null;
+    $creation_time_end          = null;
+    $expiry_date_start          = null;
+    $expiry_date_end            = null;
+    $reseller_email             = null;
+    $customer_email             = null;
+    $exact_domain_name          = null;
 
-    list($response, $header) = $domains->retrieve(
-        $limit, 
-        $page_no, 
-        $domain_id, 
-        $reseller_id, 
-        $customer_id, 
-        $show_child_orders, 
-        $tld, 
-        $status, 
-        $domain_name, 
-        $privacy_protection_enabled, 
-        $creation_time_start, 
-        $creation_time_end, 
-        $expiry_date_start, 
-        $expiry_date_end, 
-        $reseller_email, 
-        $customer_email, 
-        $exact_domain_name
-    );
-    echo json_encode($response);
+    try {
+        list($response, $header) = $apiDomains->retrieve(
+            $limit, 
+            $page_no, 
+            $domain_id, 
+            $reseller_id, 
+            $customer_id, 
+            $show_child_orders, 
+            $tld, 
+            $status, 
+            $domain_name, 
+            $privacy_protection_enabled, 
+            $creation_time_start, 
+            $creation_time_end, 
+            $expiry_date_start, 
+            $expiry_date_end, 
+            $reseller_email, 
+            $customer_email, 
+            $exact_domain_name
+        );
+    } catch (Liquid\Client\ApiException $e) {
+        echo 'Caught exception: ', $e->getMessage(), "\n";
+        echo '<br>HTTP response headers: ', $e->getResponseHeaders(), "\n";
+        echo '<br>HTTP response body: ', $e->getResponseBody(), "\n";
+        echo '<br>HTTP status code: ', $e->getCode(), "\n";
+        die;
+    }
+
+    // convert obj to array
+    $response = json_decode(json_encode($response), true);
+
+    print_r($response);
 
 Example response:
 
@@ -510,18 +568,30 @@ Using BillingApi() to add fund a reseller:
 
 .. sourcecode:: json
 
-    $billing = new \Liquid\Client\Api\BillingApi($apiClient);
+    $apiBilling = new \Liquid\Client\Api\BillingApi($apiClient);
 
-    $reseller_id    = 113;
-    $amount         = 150;
-    $description    = 'add fund from API';
+    $reseller_id = 113;
+    $amount      = 150;
+    $description = 'add fund from API';
 
-    list($response, $header) = $billing->addFundReseller(
-        $reseller_id,
-        $amount,
-        $description
-    );
-    echo json_encode($response);
+    try {
+        list($response, $header) = $apiBilling->addFundReseller(
+            $reseller_id,
+            $amount,
+            $description
+        );
+    } catch (Liquid\Client\ApiException $e) {
+        echo 'Caught exception: ', $e->getMessage(), "\n";
+        echo '<br>HTTP response headers: ', $e->getResponseHeaders(), "\n";
+        echo '<br>HTTP response body: ', $e->getResponseBody(), "\n";
+        echo '<br>HTTP status code: ', $e->getCode(), "\n";
+        die;
+    }
+
+    // convert obj to array
+    $response = json_decode(json_encode($response), true);
+
+    print_r($response);
 
 Example response:
 
@@ -546,53 +616,64 @@ Using ResellersApi() to update a reseller:
 
 .. sourcecode:: json
 
-    $reseller = new \Liquid\Client\Api\ResellersApi($apiClient);
+    $apiReseller = new \Liquid\Client\Api\ResellersApi($apiClient);
 
-    $reseller_id    = 113;
-    $email          = 'arya+15@jogjacamp.co.id';
-    $name           = 'Arya Prast';
-    $company        = 'Arya JCamp';
-    $address_line_1 = 'Pajangan';
-    $city           = 'Bantul';
-    $state          = 'Yogyakarta';
-    $country_code   = 'ID';
-    $zipcode        = '55321';
-    $tel_cc_no      = 62;
-    $tel_no         = 8579321465;
-    $selling_currency  = 'USD';
-    $address_line_2 = null;
-    $address_line_3 = null;
-    $alt_tel_cc_no  = null;
-    $alt_tel_no     = null;
-    $mobile_cc_no   = null;
-    $mobile_no      = null;
-    $fax_cc_no      = null;
-    $fax_no         = null;
+    $reseller_id      = 113;
+    $email            = 'arya+15@jogjacamp.co.id';
+    $name             = 'Arya Prast';
+    $company          = 'Arya JCamp';
+    $address_line_1   = 'Pajangan';
+    $city             = 'Bantul';
+    $state            = 'Yogyakarta';
+    $country_code     = 'ID';
+    $zipcode          = '55321';
+    $tel_cc_no        = 62;
+    $tel_no           = 8579321465;
+    $selling_currency = 'USD';
+    $address_line_2   = null;
+    $address_line_3   = null;
+    $alt_tel_cc_no    = null;
+    $alt_tel_no       = null;
+    $mobile_cc_no     = null;
+    $mobile_no        = null;
+    $fax_cc_no        = null;
+    $fax_no           = null;
 
+    try {
+        list($response, $header) = $apiReseller->updateReseller(
+            $reseller_id,
+            $email,
+            $name,
+            $company,
+            $address_line_1,
+            $city,
+            $state,
+            $country_code,
+            $zipcode,
+            $tel_cc_no,
+            $tel_no,
+            $selling_currency,
+            $address_line_2,
+            $address_line_3,
+            $alt_tel_cc_no,
+            $alt_tel_no,
+            $mobile_cc_no,
+            $mobile_no,
+            $fax_cc_no,
+            $fax_no
+        );
+    } catch (Liquid\Client\ApiException $e) {
+        echo 'Caught exception: ', $e->getMessage(), "\n";
+        echo '<br>HTTP response headers: ', $e->getResponseHeaders(), "\n";
+        echo '<br>HTTP response body: ', $e->getResponseBody(), "\n";
+        echo '<br>HTTP status code: ', $e->getCode(), "\n";
+        die;
+    }
 
-    list($response, $header) = $reseller->updateReseller(
-        $reseller_id,
-        $email,
-        $name,
-        $company,
-        $address_line_1,
-        $city,
-        $state,
-        $country_code,
-        $zipcode,
-        $tel_cc_no,
-        $tel_no,
-        $selling_currency,
-        $address_line_2,
-        $address_line_3,
-        $alt_tel_cc_no,
-        $alt_tel_no,
-        $mobile_cc_no,
-        $mobile_no,
-        $fax_cc_no,
-        $fax_no
-    );
-    echo json_encode($response);
+    // convert obj to array
+    $response = json_decode(json_encode($response), true);
+
+    print_r($response);
 
 Example response:
 
@@ -638,14 +719,26 @@ Using ResellersApi() to delete a reseller:
 
 .. sourcecode:: json
 
-    $reseller = new \Liquid\Client\Api\ResellersApi($apiClient);
+    $apiReseller = new \Liquid\Client\Api\ResellersApi($apiClient);
 
     $reseller_id = 343;
 
-    list($response, $header) = $reseller->delete_(
-        $reseller_id
-    );
-    echo json_encode($response);
+    try {
+        list($response, $header) = $apiReseller->delete_(
+            $reseller_id
+        );
+    } catch (Liquid\Client\ApiException $e) {
+        echo 'Caught exception: ', $e->getMessage(), "\n";
+        echo '<br>HTTP response headers: ', $e->getResponseHeaders(), "\n";
+        echo '<br>HTTP response body: ', $e->getResponseBody(), "\n";
+        echo '<br>HTTP status code: ', $e->getCode(), "\n";
+        die;
+    }
+
+    // convert obj to array
+    $response = json_decode(json_encode($response), true);
+
+    print_r($response);
 
 Example response:
 
