@@ -13,6 +13,7 @@ Table of Contents
    whmcs
    blesta
    boxbilling
+   hostbill
    php
    faq
 
