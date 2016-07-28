@@ -21,8 +21,8 @@ Liquid ResellerCamp HostBill Registrar Module Installations
 	c. Go to Inactive tab, then choose "Liquid" in the Modules. Click Activate
 	d. Then will go to Add New App Menu.
 	e. Make sure Application is selected Liquid, then enter Name and both the User Name dan Password with Reseller ID and API Key
-	g. Then click Test Configuration, until display the success text at his side
-	h. Then click Add New App
+	f. Then click Test Configuration, until display the success text at his side
+	g. Then click Add New App
 
 .. image:: resellercamp-hostbill.png
 
