@@ -37,6 +37,100 @@ Next enter your demo account details under Setup > Domain Registrars > ResellerC
 
 	The demo control panel will try to check the validity of the nameservers in the demo platform and not on the Registry, so you must register the nameservers first before attempting any domain registrations on the demo platform.
 
+WHMCS Addon - LIQUID PANDI Document Management Module
+-----------------------------------------------------
+
+This module provides tools for registrar / domain resellers who use LIQUID software. This module is used for document management of domain registration requirements in PANDI. The required documents can be uploaded using the WHMCS member area and can be managed by registrar/reseller through the WHMCS admin page. Documents that are already uploaded will be automatically sent through URL api.liqu.id thus making the approval process easier. 
+
+WHMCS Addon Installation for Uploading Documents to Liquid
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Before you start, please download `WHMCS AddOn Module Document Upload here <https://s3-ap-southeast-1.amazonaws.com/liqu.id/resellercamp-whmcsaddon-documentupload.zip>`_. 
+
+1. Create a new folder and name it documents inside the folder public_html. Set the permission folder to 777.
+2. Copy the addon files to folder modules/addons. 
+3. Login.
+4. Go to Setup menu > Addon Modules, then activate addon.
+
+.. image:: whmcsuploaddoc1.png
+
+5. Configure addon, enter reseller id, apikey, and google recaptcha key (public & server). How to get a google recaptcha key can be seen `here <whmcs.html#how-to-get-google-recaptcha-key>`_.
+
+.. image:: whmcsuploaddoc2.png
+
+6. Modify template to add links to Document Upload page.
+
+
+.. note::
+	Document Upload page can only be accessed in 
+
+	http://domainname.com/index.php?m=document_upload&domain_id=ID_Domain
+
+	Link directing to the page can also be added in file clientareadomaindetails.tpl in folder templates/{active_template}/
+
+	Example of link code:
+
+	<a href="index.php?m=document_upload&domain_id={$domainid}" class="btn btn-primary">Upload Document</a>
+
+How to get Google Recaptcha Key
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+1. Go to https://www.google.com/recaptcha/admin#list
+2. Create a new sitekey
+
+.. image:: recaptcha1.png
+
+3. Select a sitekey
+
+.. image:: recaptcha2.png
+
+4. Take public key and secret key
+
+.. image:: recaptcha3.png
+.. image:: recaptcha4.png
+
+.. note::
+	Since this addon uses a recaptcha service from google, you will need a captcha key you can get after registering in recaptcha. 
+
+WHMCS Addon - LIQUID DNSSec Management Module
+---------------------------------------------
+
+This module provides tools for registrars/domain resellers who use LIQUID software. This software is used for DNSSec data management with LIQUID module registrar. To use this module, make sure that you already use LIQUID module registrar on the domain you register. Only domains that are already registered in LIQUID can use this DNSSec module. 
+
+WHMCS Addon Installation for DNSSec Management
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Before you start, please download `WHMCS AddOn Module Liquid DNSSec Management here <https://s3-ap-southeast-1.amazonaws.com/liqu.id/resellercamp-whmcsaddon-liquiddssec.zip>`_. 
+
+1. Extract the files you just downloaded. There are two folders (folder includes and folder modules).
+2. Copy folder liquiddnssec from folder modules/addons to folder modules/addons in whmcs user directory.
+3. Copy file addDnsSecManagementLQ.php from folder includes/hooks to folder includes/hooks in whmcs user directory.
+4. Login as administrator.
+5. Go to Setup menu > Addon Modules, and then activate addon. 
+
+.. image:: whmcsdnssec1.png
+
+6. Configure addon, enter Reseller ID and Apikey.
+
+.. image:: whmcsdnssec2.png
+
+7. After the installation and configuration is done, Liquid DNSSec submenu will appear in Addons menu on the admin page.
+
+.. image:: whmcsdnssec3.png
+
+8. DNSSec Management submenu will appear in the Domain menu on the client page.
+
+.. image:: whmcsdnssec4.png
+
+9. DNSSec Management submenu will also appear on the sidebar of Manage menu on the client domain details page.
+
+.. image:: whmcsdnssec5.png
+
+
+Demo Mode of DNSSec Management
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Enter your demo account details under Setup menu > Addon Modules, in Liquid DNSSec. With the Test Mode checkbox ticked you can now manage your dnssec domain in WHMCS, the dnssec domain will appear on your demo ResellerCamp account but no domain will actually be registered and you will not be charged.
 
 Feedback
 ---------
