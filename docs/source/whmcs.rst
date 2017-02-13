@@ -102,29 +102,24 @@ WHMCS Addon Installation for DNSSec Management
 
 Before you start, please download `WHMCS AddOn Module Liquid DNSSec Management here <https://s3-ap-southeast-1.amazonaws.com/liqu.id/resellercamp-whmcsaddon-liquiddssec.zip>`_. 
 
-1. Extract the files you just downloaded. There are two folders (folder includes and folder modules).
+1. Extract the files you just downloaded.
 2. Copy folder liquiddnssec from folder modules/addons to folder modules/addons in whmcs user directory.
-3. Copy file addDnsSecManagementLQ.php from folder includes/hooks to folder includes/hooks in whmcs user directory.
-4. Login as administrator.
-5. Go to Setup menu > Addon Modules, and then activate addon. 
+3. Login as administrator.
+4. Go to Setup menu > Addon Modules, and then activate addon. 
 
 .. image:: whmcsdnssec1.png
 
-6. Configure addon, enter Reseller ID and Apikey.
+5. Configure addon, enter Reseller ID and Apikey
 
 .. image:: whmcsdnssec2.png
 
-7. After the installation and configuration is done, Liquid DNSSec submenu will appear in Addons menu on the admin page.
+6. After the installation and configuration is done, Liquid DNSSec submenu will appear in Addons menu on the admin page.
 
 .. image:: whmcsdnssec3.png
 
-8. DNSSec Management submenu will appear in the Domain menu on the client page.
+7. DNSSec Management submenu will also appear on the sidebar of Manage menu on the client domain details page.
 
 .. image:: whmcsdnssec4.png
-
-9. DNSSec Management submenu will also appear on the sidebar of Manage menu on the client domain details page.
-
-.. image:: whmcsdnssec5.png
 
 
 Demo Mode of DNSSec Management
