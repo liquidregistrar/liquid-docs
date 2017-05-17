@@ -12,9 +12,7 @@ Liquid ResellerCamp WHMCS Registrar Module Installations
 	c. Click Add API Key button, enter the label and the IP address of the server where WHMCS is installed to authorize it for API access.
 	d. On the same page, note down the API Key.
 2. Copy the whmcs module files
-	a. Download ResellerCamp’s WHMCS Registrar Module :
-		- `For PHP < 7 <https://s3-ap-southeast-1.amazonaws.com/liqu.id/resellercamp-whmcs-module.zip>`_
-		- `For PHP 7.x.x <https://s3-ap-southeast-1.amazonaws.com/liqu.id/resellercamp-whmcs-module-ioncube-5.6.zip>`_
+	a. Download ResellerCamp’s WHMCS Registrar Module `here for PHP < 7 <https://s3-ap-southeast-1.amazonaws.com/liqu.id/resellercamp-whmcs-module.zip>`_ dan `here for PHP 7.x.x <https://s3-ap-southeast-1.amazonaws.com/liqu.id/resellercamp-whmcs-module-ioncube-5.6.zip>`_
 	b. Extract the zip files to /YourLocalPath/whmcs/modules/registrars
 	c. Remember to replace “/YourLocalPath” with the actual location where you installed WHMCS.
 3. Setup WHMCS Configuration
@@ -102,7 +100,7 @@ This module provides tools for registrars/domain resellers who use LIQUID softwa
 WHMCS Addon Installation for DNSSec Management
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Before you start, please download `WHMCS AddOn Module Liquid DNSSec Management here <https://s3-ap-southeast-1.amazonaws.com/liqu.id/resellercamp-whmcsaddon-liquiddssec.zip>`_. 
+Before you start, please download WHMCS AddOn Module Liquid DNSSec Management `here for PHP < 7 <https://s3-ap-southeast-1.amazonaws.com/liqu.id/resellercamp-whmcsaddon-liquiddssec.zip>`_ and `here for PHP 7.x.x <https://s3-ap-southeast-1.amazonaws.com/liqu.id/resellercamp-whmcsaddon-liquiddssec-ioncube-5.6.zip>`_
 
 1. Extract the files you just downloaded.
 2. Copy folder liquiddnssec from folder modules/addons to folder modules/addons in whmcs user directory.
