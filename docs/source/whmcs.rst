@@ -45,9 +45,12 @@ This module provides tools for registrar / domain resellers who use LIQUID softw
 WHMCS Addon Installation for Uploading Documents to Liquid
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Before you start, please download `WHMCS AddOn Module Document Upload here <https://s3-ap-southeast-1.amazonaws.com/liqu.id/resellercamp-whmcsaddon-documentupload.zip>`_. 
+Before you start, please download WHMCS AddOn Module Document Upload below:
 
-1. Create a new folder and name it documents inside the folder public_html. Set the permission folder to 777.
+- `For PHP 7 <https://s3-ap-southeast-1.amazonaws.com/liqu.id/resellercamp-whmcs-upload-document-ioncube-5.6.zip>`_.
+- `For PHP < 7 <https://s3-ap-southeast-1.amazonaws.com/liqu.id/resellercamp-whmcs-upload-document.zip>`_.
+
+1. Create a new folder and name it documents in whmcs installed. Set the permission folder to 777.
 2. Copy the addon files to folder modules/addons. 
 3. Login.
 4. Go to Setup menu > Addon Modules, then activate addon.
@@ -64,13 +67,13 @@ Before you start, please download `WHMCS AddOn Module Document Upload here <http
 .. note::
 	Document Upload page can only be accessed in 
 
-	http://domainname.com/index.php?m=document_upload&domain_id=ID_Domain
+	http://domainname.com/index.php?m=liquid_upload_document&domain_id=ID_Domain
 
 	Link directing to the page can also be added in file clientareadomaindetails.tpl in folder templates/{active_template}/
 
 	Example of link code:
 
-	<a href="index.php?m=document_upload&domain_id={$domainid}" class="btn btn-primary">Upload Document</a>
+	<a href="index.php?m=liquid_upload_document&domain_id={$domainid}" class="btn btn-primary">Upload Document</a>
 
 How to get Google Recaptcha Key
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
