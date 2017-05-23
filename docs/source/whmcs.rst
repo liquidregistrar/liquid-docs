@@ -59,7 +59,7 @@ Before you start, please download WHMCS AddOn Module Document Upload below:
 
 5. Configure addon, enter reseller id, apikey, and google recaptcha key (public & server). How to get a google recaptcha key can be seen `here <whmcs.html#how-to-get-google-recaptcha-key>`_.
 
-.. image:: whmcsuploaddoc2.png
+.. image:: whmcsuploaddoc-setup.png
 
 6. Modify template to add links to Document Upload page.
 
