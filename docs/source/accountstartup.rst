@@ -1,7 +1,7 @@
 Reseller Account Startup
 ========================
 
-Upon activating your Reseller account with LogicBoxes, you need to make the following settings within your Reseller Control Panel to begin selling Products to your Customers and Sub-Resellers:
+Upon activating your Reseller account with Liqu.id, you need to make the following settings within your Reseller Control Panel to begin selling Products to your Customers and Sub-Resellers:
 
 Select your Selling Currency
 ----------------------------
