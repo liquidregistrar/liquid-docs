@@ -12,7 +12,7 @@ Liquid ResellerCamp WHMCS Registrar Module Installations
 	c. Click Add API Key button, enter the label and the IP address of the server where WHMCS is installed to authorize it for API access.
 	d. On the same page, note down the API Key.
 2. Copy the whmcs module files
-	a. Download `ResellerCamp’s WHMCS Registrar Module here <https://s3-ap-southeast-1.amazonaws.com/liqu.id/resellercamp-whmcs-module.zip>`_. 
+	a. Download ResellerCamp’s WHMCS Registrar Module `here for PHP < 7 <https://s3-ap-southeast-1.amazonaws.com/liqu.id/resellercamp-whmcs-module.zip>`_ dan `here for PHP 7.x.x <https://s3-ap-southeast-1.amazonaws.com/liqu.id/resellercamp-whmcs-module-ioncube-5.6.zip>`_
 	b. Extract the zip files to /YourLocalPath/whmcs/modules/registrars
 	c. Remember to replace “/YourLocalPath” with the actual location where you installed WHMCS.
 3. Setup WHMCS Configuration
@@ -45,9 +45,12 @@ This module provides tools for registrar / domain resellers who use LIQUID softw
 WHMCS Addon Installation for Uploading Documents to Liquid
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Before you start, please download `WHMCS AddOn Module Document Upload here <https://s3-ap-southeast-1.amazonaws.com/liqu.id/resellercamp-whmcsaddon-documentupload.zip>`_. 
+Before you start, please download WHMCS AddOn Module Document Upload below:
 
-1. Create a new folder and name it documents inside the folder public_html. Set the permission folder to 777.
+- `For PHP 7 <https://s3-ap-southeast-1.amazonaws.com/liqu.id/resellercamp-whmcs-upload-document-ioncube-5.6.zip>`_.
+- `For PHP < 7 <https://s3-ap-southeast-1.amazonaws.com/liqu.id/resellercamp-whmcs-upload-document.zip>`_.
+
+1. Create a new folder and name it documents in whmcs installed. Set the permission folder to 777.
 2. Copy the addon files to folder modules/addons. 
 3. Login.
 4. Go to Setup menu > Addon Modules, then activate addon.
@@ -56,7 +59,7 @@ Before you start, please download `WHMCS AddOn Module Document Upload here <http
 
 5. Configure addon, enter reseller id, apikey, and google recaptcha key (public & server). How to get a google recaptcha key can be seen `here <whmcs.html#how-to-get-google-recaptcha-key>`_.
 
-.. image:: whmcsuploaddoc2.png
+.. image:: whmcsuploaddoc-setup.png
 
 6. Modify template to add links to Document Upload page.
 
@@ -64,13 +67,13 @@ Before you start, please download `WHMCS AddOn Module Document Upload here <http
 .. note::
 	Document Upload page can only be accessed in 
 
-	http://domainname.com/index.php?m=document_upload&domain_id=ID_Domain
+	http://domainname.com/index.php?m=liquid_upload_document&domain_id=ID_Domain
 
 	Link directing to the page can also be added in file clientareadomaindetails.tpl in folder templates/{active_template}/
 
 	Example of link code:
 
-	<a href="index.php?m=document_upload&domain_id={$domainid}" class="btn btn-primary">Upload Document</a>
+	<a href="index.php?m=liquid_upload_document&domain_id={$domainid}" class="btn btn-primary">Upload Document</a>
 
 How to get Google Recaptcha Key
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -100,31 +103,26 @@ This module provides tools for registrars/domain resellers who use LIQUID softwa
 WHMCS Addon Installation for DNSSec Management
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Before you start, please download `WHMCS AddOn Module Liquid DNSSec Management here <https://s3-ap-southeast-1.amazonaws.com/liqu.id/resellercamp-whmcsaddon-liquiddssec.zip>`_. 
+Before you start, please download WHMCS AddOn Module Liquid DNSSec Management `here for PHP < 7 <https://s3-ap-southeast-1.amazonaws.com/liqu.id/resellercamp-whmcsaddon-liquiddssec.zip>`_ and `here for PHP 7.x.x <https://s3-ap-southeast-1.amazonaws.com/liqu.id/resellercamp-whmcsaddon-liquiddssec-ioncube-5.6.zip>`_
 
-1. Extract the files you just downloaded. There are two folders (folder includes and folder modules).
+1. Extract the files you just downloaded.
 2. Copy folder liquiddnssec from folder modules/addons to folder modules/addons in whmcs user directory.
-3. Copy file addDnsSecManagementLQ.php from folder includes/hooks to folder includes/hooks in whmcs user directory.
-4. Login as administrator.
-5. Go to Setup menu > Addon Modules, and then activate addon. 
+3. Login as administrator.
+4. Go to Setup menu > Addon Modules, and then activate addon. 
 
 .. image:: whmcsdnssec1.png
 
-6. Configure addon, enter Reseller ID and Apikey.
+5. Configure addon, enter Reseller ID and Apikey
 
 .. image:: whmcsdnssec2.png
 
-7. After the installation and configuration is done, Liquid DNSSec submenu will appear in Addons menu on the admin page.
+6. After the installation and configuration is done, Liquid DNSSec submenu will appear in Addons menu on the admin page.
 
 .. image:: whmcsdnssec3.png
 
-8. DNSSec Management submenu will appear in the Domain menu on the client page.
+7. DNSSec Management submenu will also appear on the sidebar of Manage menu on the client domain details page.
 
 .. image:: whmcsdnssec4.png
-
-9. DNSSec Management submenu will also appear on the sidebar of Manage menu on the client domain details page.
-
-.. image:: whmcsdnssec5.png
 
 
 Demo Mode of DNSSec Management
