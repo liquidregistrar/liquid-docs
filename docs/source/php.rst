@@ -126,22 +126,22 @@ Example response:
 
     [
         {
-            "domain_id":"90279",
-            "domain_name":"domainreseller1.com",
+            "domain_id":"1",
+            "domain_name":"domaindemotestxyz.com",
             "approval_status_id":"1",
             "start_date":"2015-07-27 00:00:00",
             "end_date":"2016-07-27 00:00:00",
             "reseller_id":"1",
-            "customer_id":"18",
-            "tld_id":"9",
-            "order_status_id":"2",
+            "customer_id":"1",
+            "tld_id":"1",
+            "order_status_id":"1",
             "lb_order_id":null,
             "is_migrate_cust":"0",
             "is_privacy":"0",
-            "reg_contact_id":"48",
-            "adm_contact_id":"48",
-            "bill_contact_id":"48",
-            "tech_contact_id":"48",
+            "reg_contact_id":"1",
+            "adm_contact_id":"1",
+            "bill_contact_id":"1",
+            "tech_contact_id":"1",
             "is_lock":"0",
             "is_suspend":"0",
             "is_theft_protection":"1",
@@ -150,8 +150,8 @@ Example response:
             "auth_code":null,
             "attr":"[]",
             "last_update":null,
-            "ns1":"dns1.parking-page.net",
-            "ns2":"dns2.parking-page.net",
+            "ns1":"dnsdemo1.parkir.net",
+            "ns2":"dnsdemo2.parkir.net",
             "ns3":"",
             "ns4":null,
             "ns5":null,
@@ -163,26 +163,26 @@ Example response:
             "ns11":null,
             "ns12":null,
             "ns13":null,
-            "customer_name":"Arya Prast",
+            "customer_name":"Customer Demo PHP",
             "expiry_date":"2016-07-27 00:00:00"
         },
         {
-            "domain_id":"90276",
+            "domain_id":"1",
             "domain_name":"domainreseller1.com",
             "approval_status_id":"1",
             "start_date":"2015-07-27 00:00:00",
             "end_date":"2016-07-27 00:00:00",
             "reseller_id":"1",
-            "customer_id":"18",
+            "customer_id":"1",
             "tld_id":"9",
-            "order_status_id":"2",
+            "order_status_id":"1",
             "lb_order_id":null,
             "is_migrate_cust":"0",
             "is_privacy":"0",
-            "reg_contact_id":"48",
-            "adm_contact_id":"48",
-            "bill_contact_id":"48",
-            "tech_contact_id":"48",
+            "reg_contact_id":"1",
+            "adm_contact_id":"1",
+            "bill_contact_id":"1",
+            "tech_contact_id":"1",
             "is_lock":"0",
             "is_suspend":"0",
             "is_theft_protection":"1",
@@ -191,8 +191,8 @@ Example response:
             "auth_code":null,
             "attr":"[]",
             "last_update":null,
-            "ns1":"dns1.parking-page.net",
-            "ns2":"dns2.parking-page.net",
+            "ns1":"dnsdemo1.parkir.net",
+            "ns2":"dnsdemo2.parkir.net",
             "ns3":"",
             "ns4":null,
             "ns5":null,
@@ -204,7 +204,7 @@ Example response:
             "ns11":null,
             "ns12":null,
             "ns13":null,
-            "customer_name":"Arya Prast",
+            "customer_name":"Customer Demo PHP",
             "expiry_date":"2016-07-27 00:00:00"
         }
     ]
@@ -222,10 +222,10 @@ Example Request to create a new customer:
     $queryParams    = array();
     $headerParams   = array();
 
-    $formParams['email']          = 'arya+1510@jogjacamp.co.id';
-    $formParams['name']           = 'Arya Prast';
-    $formParams['password']       = 'Customer12';
-    $formParams['company']        = 'Arya JCamp';
+    $formParams['email']          = 'demo.php@customdemo.net';
+    $formParams['name']           = 'Customer Demo PHP';
+    $formParams['password']       = '21&^90asfA';
+    $formParams['company']        = 'Customer Demo PHP';
     $formParams['address_line_1'] = 'Pajangan';
     $formParams['city']           = 'Bantul';
     $formParams['state']          = 'Yogyakarta';
@@ -260,12 +260,12 @@ Example response:
 .. sourcecode:: json
 
     {
-        "customer_id":"32",
+        "customer_id":"1",
         "reseller_id":"1",
         "status":"Active",
-        "email":"arya+1555@jogjacamp.co.id",
-        "name":"Arya Prast",
-        "company":"Arya JCamp",
+        "email":"demo.php@customdemo.net",
+        "name":"Customer Demo PHP",
+        "company":"Customer Demo PHP",
         "creation_date":"2015-11-09 07:40:29",
         "total_receipts":"0.00",
         "address_line_1":"Pajangan",
@@ -295,15 +295,15 @@ Example Request to update a customer:
 
 .. sourcecode:: php
 
-    $customer_id    = 18;
+    $customer_id    = 1;
     $resourcePath   = '/customers/' . $customer_id;
     $method         = 'PUT';
     $queryParams    = array();
     $headerParams   = array();
 
-    $formParams['email']          = 'arya+321@jogjacamp.co.id';
-    $formParams['name']           = 'Arya Prast';
-    $formParams['company']        = 'Arya JCamp';
+    $formParams['email']          = 'demo.php@customdemo.net';
+    $formParams['name']           = 'Customer Demo PHP';
+    $formParams['company']        = 'Customer Demo PHP';
     $formParams['address_line_1'] = 'Pajangan';
     $formParams['city']           = 'Bantul';
     $formParams['state']          = 'Yogyakarta';
@@ -338,12 +338,12 @@ Example response:
 .. sourcecode:: json
 
     {
-        "customer_id":"18",
+        "customer_id":"1",
         "reseller_id":"1",
         "status":"Active",
-        "email":"arya+321@jogjacamp.co.id",
-        "name":"Arya Prast",
-        "company":"Arya JCamp",
+        "email":"demo.php@customdemo.net",
+        "name":"Customer Demo PHP",
+        "company":"Customer Demo PHP",
         "creation_date":"2015-07-27 02:18:42",
         "total_receipts":"80.00",
         "address_line_1":"Pajangan",
@@ -373,7 +373,7 @@ Example Request to delete a customer:
 
 .. sourcecode:: php
 
-    $customer_id  = 32;
+    $customer_id  = 1;
     $resourcePath = '/customers/' . $customer_id;
     $method       = 'DELETE';
     $queryParams  = array();
@@ -406,7 +406,7 @@ Example response:
 .. sourcecode:: json
 
     {
-        "customer_id":"32",
+        "customer_id":"1",
         "deleted":true
     }
 
@@ -477,22 +477,22 @@ Example response:
 
     [
         {
-            "domain_id":"90279",
-            "domain_name":"domainreseller1.com",
+            "domain_id":"1",
+            "domain_name":"testdomaindemo1231.com",
             "approval_status_id":"1",
             "start_date":"2015-07-27 00:00:00",
             "end_date":"2016-07-27 00:00:00",
             "reseller_id":"1",
-            "customer_id":"18",
+            "customer_id":"1",
             "tld_id":"9",
-            "order_status_id":"2",
+            "order_status_id":"1",
             "lb_order_id":null,
             "is_migrate_cust":"0",
             "is_privacy":"0",
-            "reg_contact_id":"48",
-            "adm_contact_id":"48",
-            "bill_contact_id":"48",
-            "tech_contact_id":"48",
+            "reg_contact_id":"1",
+            "adm_contact_id":"1",
+            "bill_contact_id":"1",
+            "tech_contact_id":"1",
             "is_lock":"0",
             "is_suspend":"0",
             "is_theft_protection":"1",
@@ -501,8 +501,8 @@ Example response:
             "auth_code":null,
             "attr":"[]",
             "last_update":null,
-            "ns1":"dns1.parking-page.net",
-            "ns2":"dns2.parking-page.net",
+            "ns1":"dnsdemo1.parkir.net",
+            "ns2":"dnsdemo2.parkir.net",
             "ns3":"",
             "ns4":null,
             "ns5":null,
@@ -514,26 +514,26 @@ Example response:
             "ns11":null,
             "ns12":null,
             "ns13":null,
-            "customer_name":"Arya Prast",
+            "customer_name":"Customer Demo PHP",
             "expiry_date":"2016-07-27 00:00:00"
         },
         {
-            "domain_id":"90276",
-            "domain_name":"domainreseller1.com",
+            "domain_id":"1",
+            "domain_name":"testdomainphp3123.com",
             "approval_status_id":"1",
             "start_date":"2015-07-27 00:00:00",
             "end_date":"2016-07-27 00:00:00",
             "reseller_id":"1",
-            "customer_id":"18",
-            "tld_id":"9",
-            "order_status_id":"2",
+            "customer_id":"1",
+            "tld_id":"1",
+            "order_status_id":"1",
             "lb_order_id":null,
             "is_migrate_cust":"0",
             "is_privacy":"0",
-            "reg_contact_id":"48",
-            "adm_contact_id":"48",
-            "bill_contact_id":"48",
-            "tech_contact_id":"48",
+            "reg_contact_id":"1",
+            "adm_contact_id":"1",
+            "bill_contact_id":"1",
+            "tech_contact_id":"1",
             "is_lock":"0",
             "is_suspend":"0",
             "is_theft_protection":"1",
@@ -542,8 +542,8 @@ Example response:
             "auth_code":null,
             "attr":"[]",
             "last_update":null,
-            "ns1":"dns1.parking-page.net",
-            "ns2":"dns2.parking-page.net",
+            "ns1":"dnsdemo1.parkir.net",
+            "ns2":"dnsdemo2.parkir.net",
             "ns3":"",
             "ns4":null,
             "ns5":null,
@@ -555,7 +555,7 @@ Example response:
             "ns11":null,
             "ns12":null,
             "ns13":null,
-            "customer_name":"Arya Prast",
+            "customer_name":"Customer Demo PHP",
             "expiry_date":"2016-07-27 00:00:00"
         }
     ]
@@ -570,7 +570,7 @@ Using BillingApi() to add fund a reseller:
 
     $apiBilling = new \Liquid\Client\Api\BillingApi($apiClient);
 
-    $reseller_id = 113;
+    $reseller_id = 1;
     $amount      = 150;
     $description = 'add fund from API';
 
@@ -598,8 +598,8 @@ Example response:
 .. sourcecode:: json
 
     {
-        "transaction_id":"26452",
-        "reseller_id":"113",
+        "transaction_id":"1",
+        "reseller_id":"1",
         "transaction_type":"deposit",
         "amount":150,
         "balance":350,
@@ -618,10 +618,10 @@ Using ResellersApi() to update a reseller:
 
     $apiReseller = new \Liquid\Client\Api\ResellersApi($apiClient);
 
-    $reseller_id      = 113;
-    $email            = 'arya+15@jogjacamp.co.id';
-    $name             = 'Arya Prast';
-    $company          = 'Arya JCamp';
+    $reseller_id      = 1;
+    $email            = 'demo.php@customdemo.net';
+    $name             = 'Customer Demo PHP';
+    $company          = 'Customer Demo PHP';
     $address_line_1   = 'Pajangan';
     $city             = 'Bantul';
     $state            = 'Yogyakarta';
@@ -680,13 +680,13 @@ Example response:
 .. sourcecode:: json
 
     {
-        "reseller_id":"113",
+        "reseller_id":"1",
         "parent_reseller_id":"1",
         "status":"Active",
-        "email":"arya+15@jogjacamp.co.id",
-        "name":"Arya Prast",
+        "email":"demo.php@customdemo.net",
+        "name":"Customer Demo PHP",
         "brand_name":"Tambah Senin",
-        "company":"Arya JCamp",
+        "company":"Customer Demo PHP",
         "creation_date":"2014-10-27 03:06:38",
         "total_receipts":"159.00",
         "address_line_1":"Pajangan",
@@ -721,7 +721,7 @@ Using ResellersApi() to delete a reseller:
 
     $apiReseller = new \Liquid\Client\Api\ResellersApi($apiClient);
 
-    $reseller_id = 343;
+    $reseller_id = 1;
 
     try {
         list($response, $header) = $apiReseller->delete_(
@@ -745,7 +745,7 @@ Example response:
 .. sourcecode:: json
 
     {
-        "reseller_id":"343",
+        "reseller_id":"1",
         "deleted":true
     }
 
