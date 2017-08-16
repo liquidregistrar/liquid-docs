@@ -79,9 +79,9 @@ Example Request
     // set Host to https://api.domainsas.com/v1 if you want to use Liquid Demo
     $apiClient->getConfig()->setHost('https://api.liqu.id/v1');
     // set Reseller ID here
-    $apiClient->getConfig()->setUsername('1');
+    $apiClient->getConfig()->setUsername('##1#');
     // set Apikey here
-    $apiClient->getConfig()->setPassword('123');
+    $apiClient->getConfig()->setPassword('###21cs##');
 
 
 Retrieving data using callApi()
@@ -126,22 +126,22 @@ Example response:
 
     [
         {
-            "domain_id":"1",
-            "domain_name":"domaindemotestxyz.com",
+            "domain_id":"##1##",
+            "domain_name":"#####testxyz.com",
             "approval_status_id":"1",
             "start_date":"2015-07-27 00:00:00",
             "end_date":"2016-07-27 00:00:00",
-            "reseller_id":"1",
-            "customer_id":"1",
-            "tld_id":"1",
+            "reseller_id":"##1#",
+            "customer_id":"#1##",
+            "tld_id":"#1",
             "order_status_id":"1",
             "lb_order_id":null,
             "is_migrate_cust":"0",
             "is_privacy":"0",
-            "reg_contact_id":"1",
-            "adm_contact_id":"1",
-            "bill_contact_id":"1",
-            "tech_contact_id":"1",
+            "reg_contact_id":"##1",
+            "adm_contact_id":"##1",
+            "bill_contact_id":"##1",
+            "tech_contact_id":"##1",
             "is_lock":"0",
             "is_suspend":"0",
             "is_theft_protection":"1",
@@ -150,8 +150,8 @@ Example response:
             "auth_code":null,
             "attr":"[]",
             "last_update":null,
-            "ns1":"dnsdemo1.parkir.net",
-            "ns2":"dnsdemo2.parkir.net",
+            "ns1":"##demo1.#parkir##.net",
+            "ns2":"##demo2.#parkir##.net",
             "ns3":"",
             "ns4":null,
             "ns5":null,
@@ -167,22 +167,22 @@ Example response:
             "expiry_date":"2016-07-27 00:00:00"
         },
         {
-            "domain_id":"1",
-            "domain_name":"domainreseller1.com",
+            "domain_id":"###1#",
+            "domain_name":"domain#####123.com",
             "approval_status_id":"1",
             "start_date":"2015-07-27 00:00:00",
             "end_date":"2016-07-27 00:00:00",
-            "reseller_id":"1",
-            "customer_id":"1",
-            "tld_id":"9",
+            "reseller_id":"##1#",
+            "customer_id":"#1##",
+            "tld_id":"9#",
             "order_status_id":"1",
             "lb_order_id":null,
             "is_migrate_cust":"0",
             "is_privacy":"0",
-            "reg_contact_id":"1",
-            "adm_contact_id":"1",
-            "bill_contact_id":"1",
-            "tech_contact_id":"1",
+            "reg_contact_id":"#1#",
+            "adm_contact_id":"#1#",
+            "bill_contact_id":"#1#",
+            "tech_contact_id":"#1#",
             "is_lock":"0",
             "is_suspend":"0",
             "is_theft_protection":"1",
@@ -191,8 +191,8 @@ Example response:
             "auth_code":null,
             "attr":"[]",
             "last_update":null,
-            "ns1":"dnsdemo1.parkir.net",
-            "ns2":"dnsdemo2.parkir.net",
+            "ns1":"##demo1.#parkir##.net",
+            "ns2":"##demo2.#parkir##.net",
             "ns3":"",
             "ns4":null,
             "ns5":null,
@@ -222,9 +222,9 @@ Example Request to create a new customer:
     $queryParams    = array();
     $headerParams   = array();
 
-    $formParams['email']          = 'demo.php@customdemo.net';
+    $formParams['email']          = 'demo##php###@em####il.com';
     $formParams['name']           = 'Customer Demo PHP';
-    $formParams['password']       = '21&^90asfA';
+    $formParams['password']       = '##21&^9##fA';
     $formParams['company']        = 'Customer Demo PHP';
     $formParams['address_line_1'] = 'Pajangan';
     $formParams['city']           = 'Bantul';
@@ -232,7 +232,7 @@ Example Request to create a new customer:
     $formParams['country_code']   = 'ID';
     $formParams['zipcode']        = '55321';
     $formParams['tel_cc_no']      = 62;
-    $formParams['tel_no']         = 857321654;
+    $formParams['tel_no']         = 85732#####;
 
     try {
         list($response, $header) = $apiClient->callApi(
@@ -260,10 +260,10 @@ Example response:
 .. sourcecode:: json
 
     {
-        "customer_id":"1",
-        "reseller_id":"1",
+        "customer_id":"##1##",
+        "reseller_id":"#1##+",
         "status":"Active",
-        "email":"demo.php@customdemo.net",
+        "email":"demo##php###@em####il.com",
         "name":"Customer Demo PHP",
         "company":"Customer Demo PHP",
         "creation_date":"2015-11-09 07:40:29",
@@ -277,7 +277,7 @@ Example response:
         "country_name":"Indonesia",
         "zipcode":"55321",
         "tel_cc_no":"62",
-        "tel_no":"857321654",
+        "tel_no":"85732#####",
         "alt_tel_cc_no":null,
         "alt_tel_no":null,
         "mobile_cc_no":null,
@@ -295,22 +295,22 @@ Example Request to update a customer:
 
 .. sourcecode:: php
 
-    $customer_id    = 1;
+    $customer_id    = ##1##;
     $resourcePath   = '/customers/' . $customer_id;
     $method         = 'PUT';
     $queryParams    = array();
     $headerParams   = array();
 
-    $formParams['email']          = 'demo.php@customdemo.net';
-    $formParams['name']           = 'Customer Demo PHP';
-    $formParams['company']        = 'Customer Demo PHP';
+    $formParams['email']          = 'demo##php###@em####il.com';
+    $formParams['name']           = 'Update Customer Demo PHP';
+    $formParams['company']        = 'Update Customer Demo PHP';
     $formParams['address_line_1'] = 'Pajangan';
     $formParams['city']           = 'Bantul';
     $formParams['state']          = 'Yogyakarta';
     $formParams['country_code']   = 'ID';
     $formParams['zipcode']        = '55321';
     $formParams['tel_cc_no']      = 62;
-    $formParams['tel_no']         = 857321654;
+    $formParams['tel_no']         = 85732#####;
 
     try {
         list($response, $header) = $apiClient->callApi(
@@ -338,12 +338,12 @@ Example response:
 .. sourcecode:: json
 
     {
-        "customer_id":"1",
-        "reseller_id":"1",
+        "customer_id":"##1##",
+        "reseller_id":"#1##",
         "status":"Active",
-        "email":"demo.php@customdemo.net",
-        "name":"Customer Demo PHP",
-        "company":"Customer Demo PHP",
+        "email":"demo##php###@em####il.com",
+        "name":"Update Customer Demo PHP",
+        "company":"Update Customer Demo PHP",
         "creation_date":"2015-07-27 02:18:42",
         "total_receipts":"80.00",
         "address_line_1":"Pajangan",
@@ -355,7 +355,7 @@ Example response:
         "country_name":"Indonesia",
         "zipcode":"55321",
         "tel_cc_no":"62",
-        "tel_no":"857321654",
+        "tel_no":"85732#####",
         "alt_tel_cc_no":null,
         "alt_tel_no":null,
         "mobile_cc_no":null,
@@ -373,7 +373,7 @@ Example Request to delete a customer:
 
 .. sourcecode:: php
 
-    $customer_id  = 1;
+    $customer_id  = ##1##;
     $resourcePath = '/customers/' . $customer_id;
     $method       = 'DELETE';
     $queryParams  = array();
@@ -406,7 +406,7 @@ Example response:
 .. sourcecode:: json
 
     {
-        "customer_id":"1",
+        "customer_id":"##1##",
         "deleted":true
     }
 
@@ -477,14 +477,14 @@ Example response:
 
     [
         {
-            "domain_id":"1",
-            "domain_name":"testdomaindemo1231.com",
+            "domain_id":"#1###",
+            "domain_name":"test##domain#####.com",
             "approval_status_id":"1",
             "start_date":"2015-07-27 00:00:00",
             "end_date":"2016-07-27 00:00:00",
-            "reseller_id":"1",
-            "customer_id":"1",
-            "tld_id":"9",
+            "reseller_id":"#1###",
+            "customer_id":"##1##",
+            "tld_id":"#9",
             "order_status_id":"1",
             "lb_order_id":null,
             "is_migrate_cust":"0",
@@ -501,8 +501,8 @@ Example response:
             "auth_code":null,
             "attr":"[]",
             "last_update":null,
-            "ns1":"dnsdemo1.parkir.net",
-            "ns2":"dnsdemo2.parkir.net",
+            "ns1":"##demo1.#parkir##.net",
+            "ns2":"##demo2.#parkir##.net",
             "ns3":"",
             "ns4":null,
             "ns5":null,
@@ -518,13 +518,13 @@ Example response:
             "expiry_date":"2016-07-27 00:00:00"
         },
         {
-            "domain_id":"1",
-            "domain_name":"testdomainphp3123.com",
+            "domain_id":"#1###",
+            "domain_name":"Tets###Io.com",
             "approval_status_id":"1",
             "start_date":"2015-07-27 00:00:00",
             "end_date":"2016-07-27 00:00:00",
-            "reseller_id":"1",
-            "customer_id":"1",
+            "reseller_id":"#1###",
+            "customer_id":"##1##",
             "tld_id":"1",
             "order_status_id":"1",
             "lb_order_id":null,
@@ -542,8 +542,8 @@ Example response:
             "auth_code":null,
             "attr":"[]",
             "last_update":null,
-            "ns1":"dnsdemo1.parkir.net",
-            "ns2":"dnsdemo2.parkir.net",
+            "ns1":"##demo1.#parkir##.net",
+            "ns2":"##demo2.#parkir##.net",
             "ns3":"",
             "ns4":null,
             "ns5":null,
@@ -570,7 +570,7 @@ Using BillingApi() to add fund a reseller:
 
     $apiBilling = new \Liquid\Client\Api\BillingApi($apiClient);
 
-    $reseller_id = 1;
+    $reseller_id = #1###;
     $amount      = 150;
     $description = 'add fund from API';
 
@@ -599,7 +599,7 @@ Example response:
 
     {
         "transaction_id":"1",
-        "reseller_id":"1",
+        "reseller_id":"#1###",
         "transaction_type":"deposit",
         "amount":150,
         "balance":350,
@@ -618,17 +618,17 @@ Using ResellersApi() to update a reseller:
 
     $apiReseller = new \Liquid\Client\Api\ResellersApi($apiClient);
 
-    $reseller_id      = 1;
-    $email            = 'demo.php@customdemo.net';
-    $name             = 'Customer Demo PHP';
-    $company          = 'Customer Demo PHP';
+    $reseller_id      = #1###;
+    $email            = 'demo##php###@em####il.com';
+    $name             = 'Reseller Demo PHP';
+    $company          = 'Reseller Demo PHP';
     $address_line_1   = 'Pajangan';
     $city             = 'Bantul';
     $state            = 'Yogyakarta';
     $country_code     = 'ID';
     $zipcode          = '55321';
     $tel_cc_no        = 62;
-    $tel_no           = 8579321465;
+    $tel_no           = 857######;
     $selling_currency = 'USD';
     $address_line_2   = null;
     $address_line_3   = null;
@@ -680,13 +680,13 @@ Example response:
 .. sourcecode:: json
 
     {
-        "reseller_id":"1",
-        "parent_reseller_id":"1",
+        "reseller_id":"#1###",
+        "parent_reseller_id":"#1##",
         "status":"Active",
-        "email":"demo.php@customdemo.net",
-        "name":"Customer Demo PHP",
-        "brand_name":"Tambah Senin",
-        "company":"Customer Demo PHP",
+        "email":"demo##php###@em####il.com",
+        "name":"Reseller Demo PHP",
+        "brand_name":"Reseller Demo PHP",
+        "company":"Reseller Demo PHP",
         "creation_date":"2014-10-27 03:06:38",
         "total_receipts":"159.00",
         "address_line_1":"Pajangan",
@@ -698,7 +698,7 @@ Example response:
         "country_name":"Indonesia",
         "zipcode":"55321",
         "tel_cc_no":"62",
-        "tel_no":"8579321465",
+        "tel_no":"857######",
         "alt_tel_cc_no":null,
         "alt_tel_no":null,
         "mobile_cc_no":null,
@@ -721,7 +721,7 @@ Using ResellersApi() to delete a reseller:
 
     $apiReseller = new \Liquid\Client\Api\ResellersApi($apiClient);
 
-    $reseller_id = 1;
+    $reseller_id = #1##;
 
     try {
         list($response, $header) = $apiReseller->delete_(
@@ -745,7 +745,7 @@ Example response:
 .. sourcecode:: json
 
     {
-        "reseller_id":"1",
+        "reseller_id":"#1##",
         "deleted":true
     }
 
