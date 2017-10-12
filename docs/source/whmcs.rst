@@ -13,6 +13,7 @@ Liquid ResellerCamp WHMCS Registrar Module Installations
 	d. On the same page, note down the API Key.
 2. Copy the whmcs module files
 	a. Download ResellerCamp’s WHMCS Registrar Module
+	
 		- `For PHP < 7 <https://s3-ap-southeast-1.amazonaws.com/liqu.id/resellercamp-whmcs-module.zip>`_ (last update 2017-10-05)
 		- `For PHP 7.x.x <https://s3-ap-southeast-1.amazonaws.com/liqu.id/resellercamp-whmcs-module-ioncube-5.6.zip>`_ (last update 2017-10-05)
 	b. Extract the zip files to /YourLocalPath/whmcs/modules/registrars
