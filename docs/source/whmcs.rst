@@ -40,6 +40,65 @@ Next enter your demo account details under Setup > Domain Registrars > ResellerC
 
 	The demo control panel will try to check the validity of the nameservers in the demo platform and not on the Registry, so you must register the nameservers first before attempting any domain registrations on the demo platform.
 
+Synchron domain WHMCS with LIQUID
+----------------------------------
+
+**Synchron status Transfer in, expired date and status**
+
+This Feature is already included with WHMCS and it’s disabled by default. By enabling this feature, any domain activity such as status, expiry, and transfer status will sync with data in liquid. The following step to enable this feature are : 
+
+-  Setup > General Settings > Domains
+	- Checklist domain Sync Enabled
+	- Don’t choose Sync Notify Only
+
+- Add cronjob
+	0 0 * * * php -q /YourPathWHMCS/crons/domainsync.php that Cronjob will call skrip crons/domainsync.php once a day. each called will have 50 domains to be synced in scrolling, if all domains have been synced then it will start all over again.
+	
+**Synchron status Transfer out**
+
+LIQUID provide a cron that allows the domain already transferred out to update the status to Expired, the steps :
+
+- Download liquid cron here
+	
+	- `For PHP < 7 <https://s3-ap-southeast-1.amazonaws.com/liqu.id/liquid-cron.zip>`_ (last update 2017-10-17)
+	- `For PHP 7.x.x <https://s3-ap-southeast-1.amazonaws.com/liqu.id/liquid-cron-ioncube-5.6.zip>`_ (last update 2017-10-17)
+
+- Move the downloaded liquid folder to /YourPathWHMCS/crons/
+- Rename /YourPathWHMCS/crons/liquid/config.sample.php become /YourPathWHMCS/crons/liquid/config.php and then set this part :
+
+	- Database connection
+		
+	::
+	
+		$lq_cron_db = array(
+			'host'     => 'localhost',
+			'username' => 'username',
+			'password' => 'password',
+			'db'       => 'databaseName',
+		);
+	
+	- Set liqu.id account
+	
+	::
+	
+		$lq_cron_registrar = array(
+		    'liquid' => array(
+			'api_url'     => 'https://api.liqu.id/v1/',
+			'reseller_id' => '',
+			'api_key'     => '',
+		    ),
+		    'resellercampid' => array(
+			'api_url'     => 'https://api.liqu.id/v1/',
+			'reseller_id' => '', // If you have account manage under resellercamp.id
+			'api_key'     => '',
+		    ),
+		);
+
+	- Add Cronjob
+	
+		0 0 * * * php -q /YourPathWHMCS/crons/liquid/synctransferout.php Once a day call the script crons/liquid/synctransferout.php to chek poll message, if there is a domain transfer out from liqu.id the status will change become expired. You can view log syncron at /YourPathWHMCS/crons/liquid/report/synctransferout-Y-m-d.log.
+
+
 WHMCS Addon - LIQUID PANDI Document Management Module
 -----------------------------------------------------
 
