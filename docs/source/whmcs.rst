@@ -61,6 +61,7 @@ LIQUID provide a cron that allows the domain already transferred out to update t
 
 - Download liquid cron here
 	
+	- `For PHP 7, Ioncube 10.2 <https://www.dropbox.com/s/zvwwz32ga971ewh/liquid-cron.zip?dl=0>`_ (last update 2018-05-17)
 	- `For PHP 7, Ioncube 5.6 <https://s3-ap-southeast-1.amazonaws.com/liqu.id/liquid-cron-ioncube-5.6.zip>`_ (last update 2017-10-17)
 	- `For PHP < 7, Ioncube 5.5 <https://s3-ap-southeast-1.amazonaws.com/liqu.id/liquid-cron.zip>`_ (last update 2017-10-17)	
 
