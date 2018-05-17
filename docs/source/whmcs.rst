@@ -14,8 +14,9 @@ Liquid ResellerCamp WHMCS Registrar Module Installations
 2. Copy the whmcs module files
 	a. Download ResellerCamp’s WHMCS Registrar Module
 	
-		- `For PHP < 7 <https://s3-ap-southeast-1.amazonaws.com/liqu.id/resellercamp-whmcs-module.zip>`_ (last update 2017-10-05)
-		- `For PHP 7.x.x <https://s3-ap-southeast-1.amazonaws.com/liqu.id/resellercamp-whmcs-module-ioncube-5.6.zip>`_ (last update 2017-10-05)
+		- `For PHP 7, Ioncube 10.2  <https://www.dropbox.com/s/uc2ym5jbqzo1ljl/liquid.zip?dl=0>`_ (last update 2018-05-17)
+		- `For PHP 7, Ioncube 5.6  <https://s3-ap-southeast-1.amazonaws.com/liqu.id/resellercamp-whmcs-module-ioncube-5.6.zip>`_ (last update 2017-10-05)
+		- `For PHP < 7, Ioncube 5.5 <https://s3-ap-southeast-1.amazonaws.com/liqu.id/resellercamp-whmcs-module.zip>`_ (last update 2017-10-05)
 	b. Extract the zip files to /YourLocalPath/whmcs/modules/registrars
 	c. Remember to replace “/YourLocalPath” with the actual location where you installed WHMCS.
 3. Setup WHMCS Configuration
@@ -60,8 +61,8 @@ LIQUID provide a cron that allows the domain already transferred out to update t
 
 - Download liquid cron here
 	
-	- `For PHP < 7 <https://s3-ap-southeast-1.amazonaws.com/liqu.id/liquid-cron.zip>`_ (last update 2017-10-17)
-	- `For PHP 7.x.x <https://s3-ap-southeast-1.amazonaws.com/liqu.id/liquid-cron-ioncube-5.6.zip>`_ (last update 2017-10-17)
+	- `For PHP 7, Ioncube 5.6 <https://s3-ap-southeast-1.amazonaws.com/liqu.id/liquid-cron-ioncube-5.6.zip>`_ (last update 2017-10-17)
+	- `For PHP < 7, Ioncube 5.5 <https://s3-ap-southeast-1.amazonaws.com/liqu.id/liquid-cron.zip>`_ (last update 2017-10-17)	
 
 - Move the downloaded liquid folder to /YourPathWHMCS/crons/
 - Rename /YourPathWHMCS/crons/liquid/config.sample.php become /YourPathWHMCS/crons/liquid/config.php and then set this part :
@@ -109,8 +110,9 @@ WHMCS Addon Installation for Uploading Documents to Liquid
 
 Before you start, please download WHMCS AddOn Module Document Upload below:
 
-- `For PHP 7 <https://s3-ap-southeast-1.amazonaws.com/liqu.id/resellercamp-whmcs-upload-document-ioncube-5.6.zip>`_.
-- `For PHP < 7 <https://s3-ap-southeast-1.amazonaws.com/liqu.id/resellercamp-whmcs-upload-document.zip>`_.
+- `For PHP 7, Ioncube 10.2 <https://www.dropbox.com/s/ii4l3o63i5juqfi/liquid_upload_document.zip?dl=0>`_
+- `For PHP 7, Ioncube 5.6 <https://s3-ap-southeast-1.amazonaws.com/liqu.id/resellercamp-whmcs-upload-document-ioncube-5.6.zip>`_
+- `For PHP < 7, Ioncube 5.5 <https://s3-ap-southeast-1.amazonaws.com/liqu.id/resellercamp-whmcs-upload-document.zip>`_
 
 1. Create a new folder and name it documents in whmcs installed. Set the permission folder to 777.
 2. Copy the addon files to folder modules/addons. 
