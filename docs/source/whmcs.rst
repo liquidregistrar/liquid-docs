@@ -114,12 +114,12 @@ WHMCS Addon Installation for Uploading Documents to Liquid
 
 Before you start, please download WHMCS AddOn Module Document Upload below:
 
-- `For PHP 7, Ioncube 10.2 <https://www.dropbox.com/s/ii4l3o63i5juqfi/liquid_upload_document.zip?dl=0>`_
+- `For PHP 7.2, Ioncube 10.2 <https://www.dropbox.com/s/h4h4msnul9s8nbg/liquid_upload_document.zip?dl=0>`_ (updated at 2019-04-29)
 - `For PHP 7, Ioncube 5.6 <https://s3-ap-southeast-1.amazonaws.com/liqu.id/resellercamp-whmcs-upload-document-ioncube-5.6.zip>`_
 - `For PHP < 7, Ioncube 5.5 <https://s3-ap-southeast-1.amazonaws.com/liqu.id/resellercamp-whmcs-upload-document.zip>`_
 
-1. Create a new folder and name it documents in whmcs installed. Set the permission folder to 777.
-2. Copy the addon files to folder modules/addons. 
+1. Create a new folder and name it documents in whmcs installed.
+2. Copy the addon files to folder modules/addons.
 3. Login.
 4. Go to Setup menu > Addon Modules, then activate addon.
 
