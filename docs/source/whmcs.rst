@@ -112,7 +112,7 @@ This module provides tools for registrar / domain resellers who use LIQUID softw
 WHMCS Addon Installation for Uploading Documents to Liquid
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Before you start, please download WHMCS AddOn Module Document Upload below:
+Before you start, please download WHMCS AddOn Module Document Upload below :
 
 - `For PHP 7.2, Ioncube 10.2 <https://www.dropbox.com/s/h4h4msnul9s8nbg/liquid_upload_document.zip?dl=0>`_ (updated at 2019-04-29)
 - `For PHP 7, Ioncube 5.6 <https://s3-ap-southeast-1.amazonaws.com/liqu.id/resellercamp-whmcs-upload-document-ioncube-5.6.zip>`_
