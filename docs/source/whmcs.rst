@@ -173,9 +173,10 @@ WHMCS Addon Installation for DNSSec Management
 
 Before you start, please download WHMCS AddOn Module Liquid DNSSec Management: 
 
-	- `For PHP 7.2, Ioncube 10.2 <https://www.dropbox.com/s/mp8hnikj4e2onfp/resellercamp-whmcsaddon-liquiddssec.zip?dl=0>`_ (last update 2018-08-13)
-	- `For PHP 7.2, Ioncube 5.6 <https://s3-ap-southeast-1.amazonaws.com/liqu.id/resellercamp-whmcsaddon-liquiddssec-ioncube-5.6.zip>`_ (last update 2018-08-13)
-	- `For PHP 5.6, Ioncube 5.5 <https://s3-ap-southeast-1.amazonaws.com/liqu.id/resellercamp-whmcsaddon-liquiddssec.zip>`_ (last update 2018-08-13)
+	- `For PHP 7.2, Ioncube 10.2 <https://www.dropbox.com/s/mp8hnikj4e2onfp/resellercamp-whmcsaddon-liquiddssec.zip?dl=0>`_ (updated at 2018-08-13)
+	- `For PHP 7.1, Ioncube 10.2 <https://www.dropbox.com/s/3bm55xvm5snq7m1/liquiddnssec.zip?dl=0>`_ (updated at 2019-09-27)
+	- `For PHP 7.2, Ioncube 5.6 <https://s3-ap-southeast-1.amazonaws.com/liqu.id/resellercamp-whmcsaddon-liquiddssec-ioncube-5.6.zip>`_ (updated at 2018-08-13)
+	- `For PHP 5.6, Ioncube 5.5 <https://s3-ap-southeast-1.amazonaws.com/liqu.id/resellercamp-whmcsaddon-liquiddssec.zip>`_ (updated at 2018-08-13)
 
 1. Extract the files you just downloaded.
 2. Copy folder liquiddnssec from folder modules/addons to folder modules/addons in whmcs user directory.
