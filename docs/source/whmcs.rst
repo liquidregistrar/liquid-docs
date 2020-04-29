@@ -203,6 +203,50 @@ Demo Mode of DNSSec Management
 
 Enter your demo account details under Setup menu > Addon Modules, in Liquid DNSSec. With the Test Mode checkbox ticked you can now manage your dnssec domain in WHMCS, the dnssec domain will appear on your demo ResellerCamp account but no domain will actually be registered and you will not be charged.
 
+
+WHMCS Addon - LIQUID PANDI Premium Domain Management Module
+-----------------------------------------------------------
+
+This module provides tools for registrar / domain resellers who use LIQUID software. This module is used for management of PANDI Premium domain. 
+
+WHMCS Addon Installation for PANDI Premium Domain
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Before you start, please download WHMCS AddOn Module PANDI Premium Domain below :
+
+- `Download link will be here <https://liqu.id>`_
+
+1. Set min length restriction domain and max length restriction domain according to tld premium domain which will be registered in configuration.php file.
+
+::
+
+    Example : $DomainMinLengthRestrictions[".co.id"] = 2;
+              $DomainMaxLengthRestrictions[".co.id"] = 63;
+
+2. Extract the files you just download.
+3. Copy the addons file to folder modules/addons.
+4. Copy this template file according folder structure. The original file should be backup first.
+
+::
+
+    a. /templates/orderforms/standart_cart/configureproductdomain.tpl
+    b. /templates/orderforms/standart_cart/domainregister.tpl
+    c. /templates/orderforms/standart_cart/viewcart.tpl
+    d. /templates/orderforms/standart_cart/common.tpl
+
+5. Login to your WHMCS Administration Area.
+6. Go to Setup menu > Addons Modules, and then activate addons.
+
+.. image:: whmcsdomainpremium1.jpg
+
+7. Configure addon, Enter TLD and choose role user who can access this addons.
+
+.. image:: whmcsdomainpremium2.jpg
+
+8. After the installation and configuration is done, Premium Domain .ID submenu will appear in Addons menu on the admin page. And then, set domain TLD, currency, and price.
+
+.. image:: whmcsdomainpremium3.jpg
+
 Feedback
 ---------
 
