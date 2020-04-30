@@ -214,8 +214,8 @@ WHMCS Addon Installation for PANDI Premium Domain
 
 Before you start, please download WHMCS AddOn Module PANDI Premium Domain below :
 
-- `For WHMCS 7.6 PHP 7.1 (updated at 2020-04-29) <https://www.dropbox.com/s/t2yvuz1cka5myy7/liquid_domain_premium_price_ioncube_php71.zip?dl=0>`_ (updated at 2020-04-29)
-- `For WHMCS 7.6 PHP 5.6 (updated at 2020-04-29) <https://www.dropbox.com/s/atwqbykgd51e6s5/liquid_domain_premium_price_ioncube_php56.zip?dl=0>`_ (updated at 2020-04-29)
+- `For WHMCS 7.6 PHP 7.1 <https://www.dropbox.com/s/t2yvuz1cka5myy7/liquid_domain_premium_price_ioncube_php71.zip?dl=0>`_ (updated at 2020-04-29)
+- `For WHMCS 7.6 PHP 5.6 <https://www.dropbox.com/s/atwqbykgd51e6s5/liquid_domain_premium_price_ioncube_php56.zip?dl=0>`_ (updated at 2020-04-29)
 
 1. Set min length restriction domain and max length restriction domain according to tld premium domain which will be registered in configuration.php file.
 
