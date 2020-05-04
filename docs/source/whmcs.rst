@@ -244,9 +244,22 @@ Before you start, please download WHMCS AddOn Module PANDI Premium Domain below 
 
 .. image:: whmcsdomainpremium2.jpg
 
-8. After the installation and configuration is done, Premium Domain .ID submenu will appear in Addons menu on the admin page. And then, set domain TLD, currency, and price.
+8. After the installation and configuration is done, Premium Domain .ID submenu will appear in Addons menu on the admin page.
+
+.. image:: whmcsdomainpremium4.jpg
+
+9. And then, set domain TLD, currency, and enter price.
 
 .. image:: whmcsdomainpremium3.jpg
+
+Example : 
+
+.. image:: whmcsdomainpremium5.jpg
+
+10. When check premium domain availibilty at whmcs, it will show premium price.
+
+.. image:: whmcsdomainpremium6.jpg
+
 
 Feedback
 ---------
