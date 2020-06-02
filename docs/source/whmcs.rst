@@ -14,11 +14,11 @@ Liquid ResellerCamp WHMCS Registrar Module Installations
 2. Copy the whmcs module files
 	a. Download ResellerCamp’s WHMCS Registrar Module
 	
-		- `For PHP 7.2, Ioncube 10.2  <https://www.dropbox.com/s/uc2ym5jbqzo1ljl/liquid.zip?dl=0>`_ (last update 2018-05-17)
-		- `For PHP 7.1, Ioncube 10.2  <https://www.dropbox.com/s/15y9jzbst9dryi6/liquid.zip?dl=0>`_ (last update 2018-07-20)
-		- `For PHP 5.6, Ioncube 10.2  <https://www.dropbox.com/s/lxxeuw68zylvpew/liquid.zip?dl=0>`_ (last update 2018-05-17)
-		- `For PHP 7.2, Ioncube 5.6  <https://s3-ap-southeast-1.amazonaws.com/liqu.id/resellercamp-whmcs-module-ioncube-5.6.zip>`_ (last update 2017-10-05)
-		- `For PHP 5.6, Ioncube 5.5 <https://s3-ap-southeast-1.amazonaws.com/liqu.id/resellercamp-whmcs-module.zip>`_ (last update 2017-10-05)
+		- `For PHP 7.2, Ioncube 10.2  <https://www.dropbox.com/s/m321rj8oac0frb9/liquid.zip?dl=0>`_ (last updated 2020-06-02)
+		- `For PHP 7.1, Ioncube 10.2  <https://www.dropbox.com/s/15y9jzbst9dryi6/liquid.zip?dl=0>`_ (last updated 2018-07-20)
+		- `For PHP 5.6, Ioncube 10.2  <https://www.dropbox.com/s/lxxeuw68zylvpew/liquid.zip?dl=0>`_ (last updated 2018-05-17)
+		- `For PHP 7.2, Ioncube 5.6  <https://s3-ap-southeast-1.amazonaws.com/liqu.id/resellercamp-whmcs-module-ioncube-5.6.zip>`_ (last updated 2017-10-05)
+		- `For PHP 5.6, Ioncube 5.5 <https://s3-ap-southeast-1.amazonaws.com/liqu.id/resellercamp-whmcs-module.zip>`_ (last updated 2017-10-05)
 	b. Extract the zip files to /YourLocalPath/whmcs/modules/registrars
 	c. Remember to replace “/YourLocalPath” with the actual location where you installed WHMCS.
 3. Setup WHMCS Configuration
