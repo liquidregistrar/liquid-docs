@@ -12,7 +12,10 @@ Liquid ResellerCamp HostBill Registrar Module Installations
 	c. Click Add API Key button, enter the label and the IP address of the server where HostBill is installed to authorize it for API access.
 	d. On the same page, note down the API Key.
 2. Copy the HostBill module files
-	a. Download `ResellerCamp’s HostBill Registrar Module here <https://s3-ap-southeast-1.amazonaws.com/liqu.id/resellercamp-hostbill-module.zip>`_. 
+	a. Download `ResellerCamp’s HostBill Registrar Module:
+	
+		- `For PHP 7.2 <https://www.dropbox.com/s/etbf02937qsc8t1/class.liquid.php.zip?dl=0>`_ (last updated 2020-06-30)
+		- `For PHP 5.3 <https://www.dropbox.com/s/8tr48cn8izu497z/resellercamp-hostbill-module.zip?dl=0>`_
 	b. Extract the zip files to /YourLocalPath/includes/modules/Domain
 	c. Remember to replace “/YourLocalPath” with the actual location where you installed HostBill.
 3. Setup HostBill Configuration
