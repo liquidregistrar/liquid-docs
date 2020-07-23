@@ -15,6 +15,7 @@ Liquid ResellerCamp HostBill Registrar Module Installations
 	a. Download `ResellerCamp’s HostBill Registrar Module:
 	
 		- `For PHP 7.2 <https://www.dropbox.com/s/etbf02937qsc8t1/class.liquid.php.zip?dl=0>`_ (last updated 2020-06-30)
+		- `For PHP 5.6 <https://www.dropbox.com/s/1yddics8fnvlabx/class.liquid.php.zip?dl=0>`_ (last updated 2020-07-23)
 		- `For PHP 5.3 <https://www.dropbox.com/s/8tr48cn8izu497z/resellercamp-hostbill-module.zip?dl=0>`_
 	b. Extract the zip files to /YourLocalPath/includes/modules/Domain
 	c. Remember to replace “/YourLocalPath” with the actual location where you installed HostBill.
