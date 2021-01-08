@@ -214,6 +214,7 @@ WHMCS Addon Installation for PANDI Premium Domain
 
 Before you start, please download WHMCS AddOn Module PANDI Premium Domain below :
 
+- `For WHMCS 8 PHP 7.2 <https://www.dropbox.com/s/ox5yfjv9a47tggi/liquid_premium_domain_php_73_74_whhmcs8.zip?dl=0>`_ (updated at 2021-01-08)
 - `For WHMCS 7.6 PHP 7.1 <https://www.dropbox.com/s/t2yvuz1cka5myy7/liquid_domain_premium_price_ioncube_php71.zip?dl=0>`_ (updated at 2020-04-29)
 - `For WHMCS 7.6 PHP 5.6 <https://www.dropbox.com/s/atwqbykgd51e6s5/liquid_domain_premium_price_ioncube_php56.zip?dl=0>`_ (updated at 2020-04-29)
 
@@ -234,6 +235,8 @@ Before you start, please download WHMCS AddOn Module PANDI Premium Domain below 
     b. /templates/orderforms/standart_cart/domainregister.tpl
     c. /templates/orderforms/standart_cart/viewcart.tpl
     d. /templates/orderforms/standart_cart/common.tpl
+    e. /templates/orderforms/standart_cart/js/addons_liquid_domain_premium_price/scripts.js (for whmcs 8)
+    f. /templates/orderforms/standart_cart/js/addons_liquid_domain_premium_price/scripts.min.js (for whmcs 8)
 
 5. Login to your WHMCS Administration Area.
 6. Go to Setup menu > Addons Modules, and then activate addons.
