@@ -216,7 +216,7 @@ WHMCS Addon Installation for PANDI Premium Domain
 
 Before you start, please download WHMCS AddOn Module PANDI Premium Domain below :
 
-- `For WHMCS 8 PHP 7.2 <https://www.dropbox.com/s/ox5yfjv9a47tggi/liquid_premium_domain_php_73_74_whhmcs8.zip?dl=0>`_ (updated at 2021-01-08)
+- `For WHMCS 8 PHP 7.2 <https://www.dropbox.com/s/rss4pt79obbrngj/liquid_domain_premium_price_ioncube_whmcs8_php72.zip?dl=0>`_ (updated at 2022-03-17)
 - `For WHMCS 7.7 PHP 7.1 <https://www.dropbox.com/s/efjxd29jxk2guhh/liquid_domain_premium_price_ioncube_whmcs77_php71.zip?dl=0>`_ (updated at 2021-04-19)
 - `For WHMCS 7.6 PHP 7.1 <https://www.dropbox.com/s/t2yvuz1cka5myy7/liquid_domain_premium_price_ioncube_php71.zip?dl=0>`_ (updated at 2020-04-29)
 - `For WHMCS 7.6 PHP 5.6 <https://www.dropbox.com/s/atwqbykgd51e6s5/liquid_domain_premium_price_ioncube_php56.zip?dl=0>`_ (updated at 2020-04-29)
