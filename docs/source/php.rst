@@ -222,7 +222,7 @@ Example Request to create a new customer:
     $queryParams    = array();
     $headerParams   = array();
 
-    $formParams['email']          = 'demo##php###@em####il.com';
+    $formParams['email']          = 'liquid@liquid.local';
     $formParams['name']           = 'Customer Demo PHP';
     $formParams['password']       = '##21&^9##fA';
     $formParams['company']        = 'Customer Demo PHP';
