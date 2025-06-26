@@ -14,6 +14,7 @@ Liquid ResellerCamp WHMCS Registrar Module Installations
 2. Copy the whmcs module files
 	a. Download ResellerCamp’s WHMCS Registrar Module
 	
+		- `For PHP 8.2, Ioncube 13  <https://www.dropbox.com/scl/fi/d68gnzimy2qk5qwtoy1ay/liquid.zip?rlkey=1sbdixrqwehqi2pu07i9a8b5m&st=yzhfw8ca&dl=0>`_ (last updated 2025-06-26)
 		- `For PHP 8.1, Ioncube 10.2  <https://www.dropbox.com/s/hkgnshxrii3uwnk/liquid.zip?dl=0>`_ (last updated 2023-02-07)
 		- `For PHP 7.4, Ioncube 10.2  <https://www.dropbox.com/s/xtbe44f43zx6v40/liquid.zip?dl=0>`_ (last updated 2022-02-16)
 		- `For PHP 7.3, Ioncube 10.2  <https://www.dropbox.com/s/q4dnciyfev96rsr/liquid.zip?dl=0>`_ (last updated 2022-02-16)
