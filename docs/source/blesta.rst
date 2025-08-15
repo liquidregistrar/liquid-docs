@@ -12,7 +12,7 @@ Liquid ResellerCamp Blesta Registrar Module Installations
 	c. Click Add API Key button, enter the label and the IP address of the server where Blesta is installed to authorize it for API access.
 	d. On the same page, note down the API Key.
 2. Copy the Blesta module files
-	a. Download `ResellerCamp’s Blesta Registrar Module here <https://github.com/liquidregistrar/liquid-blesta/archive/master.zip>`_. 
+	a. Download `ResellerCamp’s Blesta Registrar Module here <https://www.dropbox.com/scl/fi/b7ce52ul78ua7esfw8wl0/liquid-blesta511-master.zip?rlkey=0x8qehngj2s3al9hpt510zbpk&st=39x93sj2&dl=0>`_. 
 	b. Extract the zip files to /YourLocalPath/components/modules
 	c. Remember to replace “/YourLocalPath” with the actual location where you installed Blesta.
 3. Setup Blesta Configuration
